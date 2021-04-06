@@ -17,6 +17,9 @@ import {MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
+import { MatButtonModule } from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     BrowserAnimationsModule,
     MatToolbarModule, 
     MatListModule, MatSidenavModule,
-    MatCardModule
+    MatCardModule, MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
