@@ -1,21 +1,20 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Nike Dunk Low University Red",
-            "price": 1599.99
-        },
-        {
-            "id": 2,
-            "name": "Bape x Comme des GARÇONS",
-            "price": 3599.99
-        },
-
-        {
-            "id": 3,
-            "name": "NB 550",
-            "price": 799.99
-        }
-
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Dunk Low University Red",
+      "price": 1599.99
+    },
+    {
+      "id": 2,
+      "name": "Bape x Comme des GARÇONS",
+      "price": 3599.99
+    },
+    {
+      "id": 3,
+      "name": "NB 550",
+      "price": 799.99
+    }
+    
+  ]
 }
