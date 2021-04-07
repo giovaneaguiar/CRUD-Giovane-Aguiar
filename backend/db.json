@@ -14,7 +14,16 @@
       "id": 3,
       "name": "NB 550",
       "price": 799.99
+    },
+    {
+      "name": "Air Jordan",
+      "price": "1299.99",
+      "id": 4
+    },
+    {
+      "name": "Iphone 8",
+      "price": "2399.99",
+      "id": 5
     }
-    
   ]
 }
