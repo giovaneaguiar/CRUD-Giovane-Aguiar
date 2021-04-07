@@ -8,11 +8,12 @@ import { Router } from '@angular/router';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.css']
 })
+
 export class ProductCreateComponent implements OnInit {
 
   product: Product = { 
-    name: 'Produto de Teste', 
-    price: 125.98
+    name:'', 
+    price: 0,
   }
 
   constructor(private productService: ProductService, 
@@ -29,7 +30,7 @@ export class ProductCreateComponent implements OnInit {
        this.router.navigate(['/products'])
 
      })
-     
+
     }
 
      cancel():void {
