@@ -1,5 +1,4 @@
 import { Product } from './product.model';
-import { HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HttpClient } from '@angular/common/http';
@@ -27,5 +26,13 @@ export class ProductService {
   // funcao para inserir o backend no novo produto
         return this.http.post<Product>(this.baseUrl, product)
         // requisição do tipo post
+  }
+
+  read(): Observable <Product[]> {
+    // funcao para inserir backend para ler os produtos, por isso cria-se um Array de Product
+
+    return this.http.get<Product[]>(this.baseUrl)
+
+    //retorna um observable, que dentro terá uma lista de produtos
   }
 }
