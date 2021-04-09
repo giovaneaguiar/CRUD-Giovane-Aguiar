@@ -35,4 +35,21 @@ export class ProductService {
 
     //retorna um observable, que dentro terá uma lista de produtos
   }
+
+
+  readById(id: string): Observable <Product> {
+    // metodo ler por Id
+          const url = `${this.baseUrl}/${id}`
+          //definida a url - nesse caso, pega a url base 
+          //e junta com o id do produto desejado
+        return this.http.get<Product>(url)
+  }
+
+  update(product: Product): Observable <Product> {
+    //manda um produto por parametro, e recebe o produto atualizado do backend.
+    const url = `${this.baseUrl}/${product.id}`
+   return this.http.put<Product>(url, product)
+  //usa-se put para fazer uma "atualização".
+  }
+
 }
