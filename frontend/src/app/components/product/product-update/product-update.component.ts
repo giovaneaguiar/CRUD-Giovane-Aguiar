@@ -1,6 +1,7 @@
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
+import { Product } from './../product.model';
 
 @Component({
   selector: 'app-product-update',
@@ -9,20 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  constructor(private productService: ProductService, private router: Router) { }
+  //product: Product;
+
+  
+
+
+  constructor(private productService: ProductService, 
+    private router: Router, 
+    private route: ActivatedRoute
+    
+    
+    ) { }
 
   ngOnInit(): void {
+
+    /*const id = this.route.snapshot.paramMap.get('id')
+    this.productService.readById(id).subscribe(product => {
+      this.product = product
+    });
+ */
   }
 
-
-
-  updateProdutc(): void {
-
-  }
-
+  updateProduct(): void {}    
+  
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate(["/products"]);
 
   }
 }
