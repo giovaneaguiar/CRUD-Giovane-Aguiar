@@ -2,7 +2,7 @@ import { Product } from './product.model';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/internal/Observable';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class ProductService {
 
-  baseUrl =  "http://localhost:3000/products"
+  baseUrl =  "http://localhost:3000/products";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {  }
 
