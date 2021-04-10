@@ -10,25 +10,25 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-  baseUrl =  "http://localhost:3000/products";
+  baseUrl = "http://localhost:3000/products";
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient) {  }
+  constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
 
-  showMessage(msg : string):void {
+  showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
       duration: 3000, horizontalPosition: "right",
-      verticalPosition: "top", 
+      verticalPosition: "top",
     })
   }
 
-  create(product: Product): Observable <Product> {
-  // funcao para inserir o backend no novo produto
-        return this.http.post<Product>(this.baseUrl, product)
-        // requisição do tipo post
+  create(product: Product): Observable<Product> {
+    // funcao para inserir o backend no novo produto
+    return this.http.post<Product>(this.baseUrl, product)
+    // requisição do tipo post
   }
 
-  read(): Observable <Product[]> {
+  read(): Observable<Product[]> {
     // funcao para inserir backend para ler os produtos, por isso cria-se um Array de Product
 
     return this.http.get<Product[]>(this.baseUrl)
@@ -37,19 +37,26 @@ export class ProductService {
   }
 
 
-  readById(id: string | null): Observable <Product> {
+  readById(id: string | null): Observable<Product> {
     // metodo ler por Id
-          const url = `${this.baseUrl}/${id}`
-          //definida a url - nesse caso, pega a url base 
-          //e junta com o id do produto desejado
-        return this.http.get<Product>(url)
+    const url = `${this.baseUrl}/${id}`
+    //definida a url - nesse caso, pega a url base 
+    //e junta com o id do produto desejado
+    return this.http.get<Product>(url)
   }
 
-  update(product: Product): Observable <Product> {
+  update(product: Product): Observable<Product> {
     //manda um produto por parametro, e recebe o produto atualizado do backend.
     const url = `${this.baseUrl}/${product.id}`
-   return this.http.put<Product>(url, product)
-  //usa-se put para fazer uma "atualização".
+    return this.http.put<Product>(url, product)
+    //usa-se put para fazer uma "atualização".
+  }
+
+  delete(id: string): Observable<Product> {
+    //manda um produto por parametro, para excluir um produto
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Product>(url);
+    //delete para deletar o produto do backend
   }
 
 }
