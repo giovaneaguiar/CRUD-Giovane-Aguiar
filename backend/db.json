@@ -14,11 +14,7 @@
       "id": 3,
       "name": "Adidas Stan Smith",
       "price": "399.99"
-    },
-    {
-      "name": "Iphone 8",
-      "price": "2399.99",
-      "id": 4
     }
+    
   ]
 }
