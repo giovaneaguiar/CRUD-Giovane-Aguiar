@@ -52,7 +52,7 @@ export class ProductService {
     //usa-se put para fazer uma "atualização".
   }
 
-  delete(id: string): Observable<Product> {
+  delete(id: number | undefined): Observable<Product> {
     //manda um produto por parametro, para excluir um produto
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Product>(url);
