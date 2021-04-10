@@ -2,7 +2,8 @@ import { Product } from './product.model';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { EMPTY, Observable } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 
 @Injectable({
@@ -15,18 +16,28 @@ export class ProductService {
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
 
-  showMessage(msg: string): void {
+  showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {
       duration: 3000, horizontalPosition: "right",
       verticalPosition: "top",
+      //se a mensagem for error, se não, success
+      panelClass: isError ? ['msg-error'] : ['msg-success']
     })
   }
 
   create(product: Product): Observable<Product> {
     // funcao para inserir o backend no novo produto
-    return this.http.post<Product>(this.baseUrl, product)
+    return this.http.post<Product>(this.baseUrl, product).pipe(
+      map(obj => obj), 
+      //recebo um objeto e estou retorno o mesmo
+      catchError(e => this.errorHandler(e))
+      //mas caso ocorra um erro na chamada do "post", ele cai no catcherror chamando a funcao
+    
+      
+    );
     // requisição do tipo post
   }
+
 
   read(): Observable<Product[]> {
     // funcao para inserir backend para ler os produtos, por isso cria-se um Array de Product
@@ -57,6 +68,15 @@ export class ProductService {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Product>(url);
     //delete para deletar o produto do backend
+  }
+
+  errorHandler(e: any): Observable<any> {
+    //console log = mostrar mensagem no console do navegador
+    console.log(e)
+    this.showMessage('Ocorreu um erro!', true);
+    //caso de um erro, mostra mensagem
+      return EMPTY
+      //retorna um observable vazio 
   }
 
 }
