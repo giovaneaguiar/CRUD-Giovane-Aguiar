@@ -42,7 +42,14 @@ export class ProductService {
   read(): Observable<Product[]> {
     // funcao para inserir backend para ler os produtos, por isso cria-se um Array de Product
 
-    return this.http.get<Product[]>(this.baseUrl)
+    return this.http.get<Product[]>(this.baseUrl).pipe(
+      map(obj => obj), 
+      //recebo um objeto e estou retorno o mesmo
+      catchError(e => this.errorHandler(e))
+      //mas caso ocorra um erro na chamada do "post", ele cai no catcherror chamando a funcao
+    
+      
+    );
 
     //retorna um observable, que dentro terá uma lista de produtos
   }
@@ -53,20 +60,41 @@ export class ProductService {
     const url = `${this.baseUrl}/${id}`
     //definida a url - nesse caso, pega a url base 
     //e junta com o id do produto desejado
-    return this.http.get<Product>(url)
+    return this.http.get<Product>(url).pipe(
+      map(obj => obj), 
+      //recebo um objeto e estou retorno o mesmo
+      catchError(e => this.errorHandler(e))
+      //mas caso ocorra um erro na chamada do "post", ele cai no catcherror chamando a funcao
+    
+      
+    );
   }
 
   update(product: Product): Observable<Product> {
     //manda um produto por parametro, e recebe o produto atualizado do backend.
     const url = `${this.baseUrl}/${product.id}`
-    return this.http.put<Product>(url, product)
+    return this.http.put<Product>(url, product).pipe(
+      map(obj => obj), 
+      //recebo um objeto e estou retorno o mesmo
+      catchError(e => this.errorHandler(e))
+      //mas caso ocorra um erro na chamada do "post", ele cai no catcherror chamando a funcao
+    
+      
+    );
     //usa-se put para fazer uma "atualização".
   }
 
   delete(id: number | undefined): Observable<Product> {
     //manda um produto por parametro, para excluir um produto
     const url = `${this.baseUrl}/${id}`
-    return this.http.delete<Product>(url);
+    return this.http.delete<Product>(url).pipe(
+      map(obj => obj), 
+      //recebo um objeto e estou retorno o mesmo
+      catchError(e => this.errorHandler(e))
+      //mas caso ocorra um erro na chamada do "post", ele cai no catcherror chamando a funcao
+    
+      
+    );
     //delete para deletar o produto do backend
   }
 
