@@ -37,7 +37,7 @@ export class ProductService {
   }
 
 
-  readById(id: string): Observable <Product> {
+  readById(id: string | null): Observable <Product> {
     // metodo ler por Id
           const url = `${this.baseUrl}/${id}`
           //definida a url - nesse caso, pega a url base 
