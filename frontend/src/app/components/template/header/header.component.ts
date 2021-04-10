@@ -1,3 +1,4 @@
+import { HeaderService } from './header.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private headerService: HeaderService) { }
 
   ngOnInit(): void {
   }
 
+// 3 metodos get que usa-se como atributo, recursos do proprio js
+  get title(): string {
+    return this.headerService.headerData.title
+  }
+
+  get icon(): string {
+    return this.headerService.headerData.icon
+  }
+
+  get routeUrl(): string {
+    return this.headerService.headerData.routeUrl
+  }
 }
