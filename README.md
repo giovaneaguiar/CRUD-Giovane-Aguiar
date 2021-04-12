@@ -1,5 +1,5 @@
-### CRUD Giovane Aguiar
-### Aplicação de Cadastro (CRUD) com criação, leitura, atualização e exclusão de produto utilizando Angular. Desenvolvido com back-end simples, focado no front-end. 
+## CRUD Giovane Aguiar
+## Aplicação de Cadastro (CRUD) com criação, leitura, atualização e exclusão de produto utilizando Angular. Desenvolvido com back-end simples, focado no front-end. 
 
 ## Ínicio (Home)
 
