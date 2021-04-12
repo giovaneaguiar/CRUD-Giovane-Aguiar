@@ -5,19 +5,19 @@
 
 <img src="/frontend/src/assets/1.png"> 
 
-## Criação (C)
+## Criação (Create)
 
 
 <img src="/frontend/src/assets/2.png">
 
-## Leitura (R)
+## Leitura (Read)
 
 <img src="/frontend/src/assets/3.png">
 
-## Atualização (U)
+## Atualização (Update)
 
 <img src="/frontend/src/assets/4.png">
 
-## Exclução (D)
+## Exclução (Delete)
 
 <img src="/frontend/src/assets/5.png">
