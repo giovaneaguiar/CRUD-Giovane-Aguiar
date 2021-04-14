@@ -2,7 +2,7 @@
 <p align="center">Aplicação de Cadastro (CRUD) com criação, leitura, atualização e exclusão de produto utilizando Angular. Desenvolvido com back-end simples, focado no front-end.</p>
 
 ## 🎨 Layout 
-### Ínicio (Home)
+### Ínicio - Home
 
 <img src="/frontend/src/assets/1.png" width="800" height="400"> 
 
