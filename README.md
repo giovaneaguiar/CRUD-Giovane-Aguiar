@@ -22,6 +22,7 @@
 ### Exclução (Delete)
 
 <img src="/frontend/src/assets/5.png" width="800" height="400">
+
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
