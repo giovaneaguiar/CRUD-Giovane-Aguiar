@@ -39,6 +39,12 @@ $ npm start
 # O servidor inciará - acesse <http://localhost:4200>
 ```
 
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+- [Angular](https://angular.io/guide/what-is-angular)
+- [TypeScript](https://www.typescriptlang.org/)
+
 ## Ínicio (Home)
 
 <img src="/frontend/src/assets/1.png"> 
