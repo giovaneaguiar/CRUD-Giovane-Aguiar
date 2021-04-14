@@ -6,20 +6,20 @@
 
 <img src="/frontend/src/assets/1.png" width="800" height="400"> 
 
-### Criação (Create)
+### Criação - Create
 
 
 <img src="/frontend/src/assets/2.png" width="800" height="400">
 
-### Leitura (Read)
+### Leitura - Read
 
 <img src="/frontend/src/assets/3.png" width="800" height="400">
 
-### Atualização (Update)
+### Atualização - Update
 
 <img src="/frontend/src/assets/4.png" width="800" height="400">
 
-### Exclução (Delete)
+### Exclução - Delete
 
 <img src="/frontend/src/assets/5.png" width="800" height="400">
 
