@@ -9,7 +9,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina a seguinte f
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
-### ☕ Rodando o Projeto
+### ☕ Rodando o Servidor
 
 ```bash
 # Clone este repositório
@@ -24,14 +24,29 @@ $ cd backend
 # Instale as dependências
 $ npm install
 
-# Execute o backend com o JSON
+# Execute o backend 
 $ npm start
 
-# Em outro terminal, entre na pasta frontend
+# O servidor inciará - acesse <http://localhost:3000>
+```
+
+### ☕ Rodando a Aplicação Web
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/giovaneaguiar/CRUD-Giovane-Aguiar>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd CRUD-Giovane-Aguiar
+
+# Vá para a pasta frontend
 $ cd frontend
 
-# Instale as depêndencias 
+# Instale as dependências
 $ npm install
+
+# Execute o frontend
+$ npm start
 
 # Execute o frontend
 $ npm start
