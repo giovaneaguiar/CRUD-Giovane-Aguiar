@@ -51,7 +51,7 @@ $ npm start
 # O servidor inciará - acesse <http://localhost:3000>
 ```
 
-### ☕ Rodando a Aplicação Web
+### 🍵 Rodando a Aplicação Web
 
 ```bash
 # Clone este repositório
