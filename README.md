@@ -1,26 +1,27 @@
 <h1 align="center">CRUD</h1>
 <p align="center">Aplicação de Cadastro (CRUD) com criação, leitura, atualização e exclusão de produto utilizando Angular. Desenvolvido com back-end simples, focado no front-end.</p>
 
-## Ínicio (Home)
+## 🎨 Layout 
+### Ínicio (Home)
 
-<img src="/frontend/src/assets/1.png"> 
+<img src="/frontend/src/assets/1.png" width="800" height="400"> 
 
-## Criação (Create)
+### Criação (Create)
 
 
-<img src="/frontend/src/assets/2.png">
+<img src="/frontend/src/assets/2.png" width="800" height="400">
 
-## Leitura (Read)
+### Leitura (Read)
 
-<img src="/frontend/src/assets/3.png">
+<img src="/frontend/src/assets/3.png" width="800" height="400">
 
-## Atualização (Update)
+### Atualização (Update)
 
-<img src="/frontend/src/assets/4.png">
+<img src="/frontend/src/assets/4.png" width="800" height="400">
 
-## Exclução (Delete)
+### Exclução (Delete)
 
-<img src="/frontend/src/assets/5.png">
+<img src="/frontend/src/assets/5.png" width="800" height="400">
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
