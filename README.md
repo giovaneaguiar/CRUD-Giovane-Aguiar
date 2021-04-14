@@ -48,9 +48,6 @@ $ npm install
 # Execute o frontend
 $ npm start
 
-# Execute o frontend
-$ npm start
-
 # O servidor inciará - acesse <http://localhost:4200>
 ```
 
