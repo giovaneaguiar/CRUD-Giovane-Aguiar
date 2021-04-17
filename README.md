@@ -25,8 +25,8 @@
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
-[Git](https://git-scm.com).
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
@@ -77,4 +77,3 @@ $ npm start
 As seguintes ferramentas foram usadas na construção do projeto:
 - [Angular](https://angular.io/guide/what-is-angular)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Node.js](https://nodejs.org/en/)
