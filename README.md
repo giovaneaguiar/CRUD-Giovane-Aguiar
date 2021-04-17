@@ -77,3 +77,4 @@ $ npm start
 As seguintes ferramentas foram usadas na construção do projeto:
 - [Angular](https://angular.io/guide/what-is-angular)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
