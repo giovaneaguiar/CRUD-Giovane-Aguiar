@@ -1,5 +1,5 @@
 <h1 align="center">CRUD</h1>
-<p align="center">Aplicação de Cadastro <strong>(CRUD)</strong> com criação, leitura, atualização e exclusão de produto utilizando <strong>Angular</strong>. Desenvolvido com back-end simples, focado no front-end.</p>
+<p align="center">Aplicação de Cadastro <strong>(CRUD)</strong> com criação, leitura, atualização e exclusão de produto utilizando <strong>Angular</strong>. Desenvolvido com back-end simples, focado no <strong>front-end</strong>.</p>
 
 ## 🎨 Layout 
 ### Ínicio - Home
